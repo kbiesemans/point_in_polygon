@@ -1,0 +1,9 @@
+point_in_polygon() uses the 'Ray Casting' method to determine whether a given point (as a longitude, latitude) lies within a given area (as a list of longitude, latitude tuples).
+
+h3. Example
+
+@pip = scraperwiki.utils.swimport('point_in_polygon')@
+@polygon = [(0,10),(10,10),(10,0),(0,0)]@
+@print pip.point_in_polygon(5, 5, polygon)@
+@print pip.point_in_polygon(10, 10, polygon)@
+@print pip.point_in_polygon(15, 5, polygon)@
